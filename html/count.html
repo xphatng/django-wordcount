@@ -1,0 +1,16 @@
+<h1>
+Your Text {{fulltext}}
+</h1> 
+<a href="{% url 'home' %}"> Start Again </a>
+<br>
+<a href="http://www.google.com"> Google </a>
+<br>
+Number of Word: {{ count }}
+
+<br>
+WordList: {{ wordDict }}
+<br>
+{% for word, key in listDict %}
+{{ word }} : {{ key }}
+<br>
+{% endfor %}
